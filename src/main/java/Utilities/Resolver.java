@@ -30,7 +30,25 @@ public class Resolver {
         createBookingBody.put("additionalneeds", additionalneeds);
 
         return createBookingBody;
-
-
     }
+
+    //Json Object body to use in Update Booking
+    public JSONObject updateBookingBody(String firstname, String lastname, int totalprice, boolean depositpaid,
+                                        String checkin, String checkout, String additionalneeds) {
+
+        JSONObject updateBookingBody = new JSONObject();
+
+        updateBookingBody.put("firstname", firstname);
+        updateBookingBody.put("lastname", lastname);
+        updateBookingBody.put("totalprice", totalprice);
+        updateBookingBody.put("depositpaid", depositpaid);
+        JSONObject bookingDates = new JSONObject();
+        bookingDates.put("checkin", checkin);
+        bookingDates.put("checkout", checkout);
+        updateBookingBody.put("bookingdates", bookingDates);
+        updateBookingBody.put("additionalneeds", additionalneeds);
+
+        return updateBookingBody;
+    }
+
 }
