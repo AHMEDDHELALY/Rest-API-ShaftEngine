@@ -51,4 +51,14 @@ public class Resolver {
         return updateBookingBody;
     }
 
+    //Json Object body to use Get Booking Ids
+    public JSONObject getBookingIds(String token){
+        JSONObject getBookingIds = new JSONObject();
+        getBookingIds.put("token", token);
+
+        return getBookingIds;
+    }
+
+
+
 }
