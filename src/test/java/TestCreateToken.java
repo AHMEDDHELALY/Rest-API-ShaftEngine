@@ -25,12 +25,5 @@ public class TestCreateToken {
         String token = RestActions.getResponseJSONValue(authBody,"token");
 
         RequestApi.postRequest(authEndPoint, authBody);
-
-        System.out.println("FSDGHsdfghj$#%$6#%$^%&%$#CXVBNnvvbnvbnbvnbvnvbnertg%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
-        System.out.println(authBody);
-        System.out.println(token);
-        System.out.println("FSDGHsdfghj$#%$6#%$^%&%$#CXVBNnvvbnvbnbvnbvnvbnertg%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
-
-
     }
 }
